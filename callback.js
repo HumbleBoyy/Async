@@ -5,27 +5,24 @@ const posts = [
     {title:"post Two", body:"This is post Two"}
 ];
 
-
 function getPosts(){
-    setTimeout(()=>{
-        let outPut = '';
+    let outPut = ''
 
+    setTimeout(()=> {
         posts.forEach((post, index)=> {
-            outPut += `<li>${post.title}</li>`;
-        });
-
+            outPut += `<h2>${post.title}</h2>`
+        })
+    
         document.body.innerHTML = outPut;
     },1000)
-
+   
 }
 
-function createPost(post, callback) {
-    setTimeout(()=>{
+function createPost(post, callback){
+    setTimeout(()=> {
         posts.push(post);
-        callback();
-    }, 2000);
+        callback()
+    }, 2000)
 }
 
-
-
-createPost({title:"Post Three", body:"This is post three"}, getPosts);
+createPost({title:"Post Three", body:"This is post three"}, getPosts())

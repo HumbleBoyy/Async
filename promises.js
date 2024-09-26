@@ -35,9 +35,9 @@ function createPost(post) {
         }, 2000);
     })
 }
-// createPost({title:"Post three", body:"This is post three"})
-// .then(getPosts)
-// .catch(error => console.log(error));
+createPost({title:"Post four", body:"This is post four"})
+.then(getPosts)
+.catch(error => console.log(error));
 
 
 // Aysnc / Await
@@ -71,4 +71,4 @@ fetchUsers();
 
 // const promise4 = fetch('https://jsonplaceholder.typicode.com/users')
 // .then(res => res.json())
-// Promise.all([promise1, promise2,promise3, promise4]).then(values => console.log(values))
+// Promise.all([promise1, promise2, promise3, promise4]).then(values => console.log(values))
