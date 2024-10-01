@@ -4,6 +4,11 @@ let salaries = {
     "Mary":300,
 };
 
+const user = {
+    name: "John",
+    age: 30
+}
+
 const salaryStuff = [100, 200, 300, 1021, 3021,];
 
 function sumSalaries(salaries){
@@ -30,3 +35,10 @@ const salarySUm = salaryStuff.reduce((total, summ)=> {
 },)
 
 console.log(salarySUm)
+
+
+function countUser(user) {
+     return Object.keys(user).length
+}
+
+countUser()
