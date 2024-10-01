@@ -1,5 +1,4 @@
 // Aysnc, callback
-
 const posts = [
     {title:"post One", body:"This is post one"},
     {title:"post Two", body:"This is post Two"}
